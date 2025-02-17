@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Not found",
+  title: 'Not found',
 };
 
 export default function NotFound() {

@@ -1,5 +1,5 @@
-import { API_URL } from "../app/constants";
-import styles from "../styles/movie-info.module.css";
+import { API_URL } from '../app/constants';
+import styles from '../styles/movie-info.module.css';
 
 export async function getMovie(id: string) {
   const response = await fetch(`${API_URL}/${id}`);
@@ -20,7 +20,7 @@ export default async function MovieInfo({ id }: { id: string }) {
         <h1>{movie.title}</h1>
         <h3>* {movie.vote_average.toFixed(1)}</h3>
         <p>{movie.overview}</p>
-        <a href={movie.hompage} target={"_blank"}>
+        <a href={movie.hompage} target={'_blank'}>
           Homepage &rarr;
         </a>
       </div>
